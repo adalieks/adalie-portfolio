@@ -87,6 +87,114 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /* General Styles */
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Hubballi', cursive;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  ul,
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3.2em;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    line-height: 14px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .content-wrapper {
+    width: 90%;
+    margin: 55px 0;
+  }
+
+  
+  /* -------------------- Base Header - Footer Styles -------------------- */
+
+  header,
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+  
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 25px 0 0 0;
+  }
+
+  header .header-left {
+    width: 81%;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  header nav {
+    width: 81%;
+    font-size: 1em;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  header nav ul li {
+    font-size: 1em;
+  }  
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
