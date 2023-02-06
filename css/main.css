@@ -91,6 +91,7 @@ textarea {
 
   html {
     font-size: 16px;
+    background-color: #FFFEFC;
   }
 
   body {
@@ -135,64 +136,159 @@ textarea {
 
   .content-wrapper {
     width: 90%;
-    margin: 55px 0;
+    margin: 25px auto;
   }
 
-  
   /* -------------------- Base Header - Footer Styles -------------------- */
 
   header,
   footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-flow: row wrap;
   }
 
   header {
-    padding: 15px 0;
+    padding: 16px 0;
   }
   
   header .content-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-flow: row wrap;
-    margin: 25px 0 0 0;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 25px auto 0 auto;
   }
 
-  header .header-left {
-    width: 81%;
+  .header-left h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  .header-right ul {
+    margin: 1em 0 .5em 0;
+    text-align: center;
+    font-size: 1.25em;
+    text-transform: lowercase;
+  }
+
+  .header-right li {
+    display: inline;
+  }
+
+  .header-right a {
+    display: inline-block;
+    padding: .5em .5em;
+  }
+
+  header {
+    padding: 16px 0;
+  }
+  
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto 25px auto;
+  }
+
+  .footer-left {
     font-family: 'IBM Plex Serif', serif;
     font-weight: 400;
     font-size: 1.2em;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
-  
-  header nav {
-    width: 81%;
-    font-size: 1em;
+
+  .footer-right ul {
+    margin: 1em 0 .5em 0;
+    text-align: center;
+    font-size: 1.25em;
     text-transform: lowercase;
+  }
+
+  .footer-right li {
+    display: inline;
+  }
+
+  .footer-right a {
+    display: inline-block;
+    padding: .5em .7em;
+  }
+
+  /* -------------------- Mobile Styles - Homepage -------------------- */
+
+  /* About */
+
+  .about .content-wrapper {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-around;
-    flex-flow: row wrap;
-  }
-  
-  header nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
-  header nav ul li {
-    font-size: 1em;
-  }  
+  .avatar {
+    width: 63%;
+    margin: 0 auto 0 auto;
+  }
 
+  .avatar img {
+    background: transparent;
+  }
+
+  .about h2 {
+    margin: 0 auto 0 auto;
+  }
+
+  .about h2 span {
+    color: #33658A;
+  }
+
+  .statement {
+    margin: 10px auto 10px auto;
+    font-size: 1.625em;
+    line-height: 25px;
+  }
+
+  .palette li {
+    display: inline;
+  }
+
+  .palette i {
+    display: inline-block;
+    padding: 0 .20em;
+  }
+
+  .blue {
+    font-size: 55px;
+    color: #33658A;
+  }
+
+  .green {
+    font-size: 55px;
+    color: #7DCE82;
+  }
+
+  .purple {
+    font-size: 55px;
+    color: #C3C3E6;
+  }
+
+  .red {
+    font-size: 55px;
+    color: #DB8A74;
+  }
+
+  .about-me {
+    font-size: 1.25em;
+    line-height: 20px;
+    width: 75%;
+  }
 
 
 /* ==========================================================================
