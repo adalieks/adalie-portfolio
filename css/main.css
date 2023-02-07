@@ -412,6 +412,7 @@ textarea {
 
   .project-description {
     text-align: left;
+    line-height: 15px;
     width: 95%;
   }
 
@@ -428,6 +429,46 @@ textarea {
     background-color: #C3C3E6;
   }
 
+  /* Contact */
+
+  .contact {
+    margin-left: 30px;
+  }
+
+  .contact h2 {
+    text-align: left;
+    line-height: 97%;
+    margin-bottom: 20px;
+  }
+
+  .contact h2 span {
+    color: #DB8A74;
+  }
+
+  .contact address {
+    text-align: left;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+
+  .contact address a {
+    text-decoration: underline;
+    text-decoration-color: #DB8A74;
+    text-underline-offset: 8px;
+  }
+
+  .contact .social-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 50px;
+  }
+
+  /* Mobile Footer */
+
+  footer .footer-left {
+    display: none;
+  }
 
 
 /* ==========================================================================
