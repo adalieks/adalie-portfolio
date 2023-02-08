@@ -83,7 +83,7 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
+  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -286,7 +286,8 @@ textarea {
   .about-me {
     font-size: 1.25em;
     line-height: 20px;
-    width: 75%;
+    width: 80%;
+    margin: 10px auto;
   }
 
   /* Skills */
@@ -310,6 +311,7 @@ textarea {
     top: 15%;
     left: 10px;
   }
+
   .navigation .next {
     right: 10px;
     position: absolute;
@@ -317,6 +319,7 @@ textarea {
     z-index: 10;
     top: 15%;
   }
+
   .navigation .nav-btn {
     background: rgba(255, 255, 255, 0.55);
     cursor: pointer;
@@ -329,6 +332,7 @@ textarea {
     padding: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   }
+
   .navigation .nav-btn:hover {
     background: #7DCE82;
   }
@@ -466,6 +470,102 @@ textarea {
   footer .footer-left {
     display: none;
   }
+
+  /* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+   @media only screen and (min-width: 768px) {
+
+    /* General styles*/
+
+    .content-wrapper {
+      max-width: 640px;
+      margin-top: 100px;
+    }
+
+    /* -------------------- Tablet Styles - Homepage -------------------- */
+
+    /* About */
+
+    .about .content-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 50px auto;
+      text-align: left;
+    }
+
+    .about .about-style {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .avatar img {
+      width: 300px;
+    }
+
+    .about h2 {
+      margin: 0;
+    }
+
+    .about p {
+      margin: 5px 0;
+    }
+
+    .about .palette {
+      margin-left: -10px;
+    }
+
+    /* Skills */
+
+    .navigation .nav-btn {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    .navigation .prev {
+      font-size: 40px;
+      top: 30%;
+      left: 10px;
+    }
+  
+    .navigation .next {
+      font-size: 40px;
+      z-index: 10;
+      top: 30%;
+    }
+
+    .caption {
+      font-size: 1.5em;
+    }
+
+    /* Projects */
+
+    .projects h2 {
+      margin-top: 150px;
+    }
+
+    .projects .content-wrapper {
+      max-width: 700px;
+    }
+
+    .project-item {
+      width: 40%;
+    }
+
+    /* Contact */
+
+    .contact br {
+      display: none;
+    }
+
+   }
+
+
+
+
 
 
 /* ==========================================================================
