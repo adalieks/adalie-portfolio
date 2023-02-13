@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Adalie Schroter</title>
-  <meta name="description" content="">
+  <meta name="description" content="adalies-portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -16,6 +16,11 @@
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Place favicon.ico in the root directory -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,12 +38,12 @@
   <header>
     <div class="content-wrapper">
       <div class="header-left">
-        <h1>Adalie Schroter</h1>
+        <h1 id="about">Adalie Schroter</h1>
       </div>
       <div class="header-right">
         <nav>
           <ul>
-            <li class="about-link"><a href="#about">about</a></li>
+            <li class="about-link"><a type = "button" onclick = "swapImages()" value = "Swap Image" href="#top">about</a></li>
             <li class="skills-link"><a href="#skills">skills</a></li>
             <li class="projects-link"><a href="#projects">projects</a></li>
             <li class="contact-link"><a href="#contact">connect</a></li>
@@ -53,17 +58,17 @@
     <section class="about">
       <div class="content-wrapper">
         <div class="avatar">
-          <img src="./img/clean-avatar.png" alt="adalie's avatar">
+          <img src="./img/clean-avatar.png" alt="adalie's avatar" id="get-image">
         </div>
         <div class="about-style">
-        <h2 id="about">Adalie<span>.</span></h2>
+        <h2>Adalie<span>.</span></h2>
         <p class="statement">
           Hey there! I am a front-end developer based in France.
         </p>
         <div class="palette">
           <ul>
             <li class="blue">
-              <a href="#about">
+              <a type = "button" onclick = "swapImages()" value = "Swap Image" href="#top">
                 <i class="fa fa-solid fa-circle"></i>
               </a>
             </li>
@@ -235,7 +240,7 @@
       <div class="footer-right">
         <nav>
           <ul>
-            <li class="about-link"><a href="#about">about</a></li>
+            <li class="about-link"><a href="#top">about</a></li>
             <li class="skills-link"><a href="#skills">skills</a></li>
             <li class="projects-link"><a href="#projects">projects</a></li>
           </ul>

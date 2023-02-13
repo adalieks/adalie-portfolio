@@ -675,6 +675,12 @@ textarea {
     width: 70%;
   }
 
+  .about a:hover {
+    text-shadow: 5px 5px 5px rgba(56, 56, 56, 0.336);
+  }
+
+
+
   /* Projects */
 
   .project-item {
