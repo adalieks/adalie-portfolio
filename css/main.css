@@ -233,14 +233,32 @@ textarea {
     flex-wrap: wrap;
   }
 
-  .avatar {
+  #avatar,
+  .container {
     width: 63%;
-    margin: 0 auto 0 auto;
-    max-width: 550px;
+    margin: 0;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 51vmin;
+    justify-content: space-between;
   }
 
-  .avatar img {
-    background: transparent;
+  .imageContainer{
+    position: absolute;
+    max-width: 450px;
+  }
+
+  .hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s, visibility .5s;
+  }
+
+  .visible{
+    visibility: visible;
+    opacity: 1;
   }
 
   .about h2 {

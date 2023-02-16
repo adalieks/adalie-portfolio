@@ -41,7 +41,7 @@
       <div class="header-right">
         <nav>
           <ul>
-            <li class="about-link"><a type = "button" onclick = "swapImages()" value = "Swap Image" href="#top">about</a></li>
+            <li class="about-link"><a id="reveal-header" href="#top">about</a></li>
             <li class="skills-link"><a href="#skills">skills</a></li>
             <li class="projects-link"><a href="#projects">projects</a></li>
             <li class="contact-link"><a href="#contact">connect</a></li>
@@ -55,9 +55,10 @@
 
     <section class="about">
       <div class="content-wrapper">
-        <div class="avatar">
-          <img src="./img/clean-avatar.png" alt="adalie's avatar" id="get-image">
-        </div>
+        <div id="avatar" class="container">
+          <img class="imageContainer visible" src="./img/clean-avatar.png" alt="avatar of Adalie">
+          <img id="secondImg" class="imageContainer hide"   src="./img/reveal-avatar.png" alt="avatar with doodles">
+      </div>
         <div class="about-style">
         <h2>Adalie<span>.</span></h2>
         <p class="statement">
@@ -66,7 +67,7 @@
         <div class="palette">
           <ul>
             <li class="blue">
-              <a type = "button" onclick = "swapImages()" value = "Swap Image" href="#top">
+              <a href="#top" id="reveal-palette">
                 <i class="fa fa-solid fa-circle"></i>
               </a>
             </li>
@@ -100,47 +101,47 @@
         <div class="cardbox">
           <div class="under-cardbox">
             <div class="card">
-              <div class="cardimg"><img src="./img/chrome-dev-tools-icon.png" alt="chrome dev tool logo" /></div>
+              <div class="cardimg"><img src="./img/chrome-dev-tools-icon.png" alt="chrome dev tool logo" ></div>
               <div class="caption">Chrome Dev Tools</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/api-icon.png" alt="api icon" /></div>
+              <div class="cardimg"><img src="./img/api-icon.png" alt="api icon" ></div>
               <div class="caption">APIs</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/git-icon.png" alt="git logo" /></div>
+              <div class="cardimg"><img src="./img/git-icon.png" alt="git logo" ></div>
               <div class="caption">Git</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/github-icon.png" alt="github logo" /></div>
+              <div class="cardimg"><img src="./img/github-icon.png" alt="github logo" ></div>
               <div class="caption">GitHub</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/html-icon.png" alt="html logo" /></div>
+              <div class="cardimg"><img src="./img/html-icon.png" alt="html logo" ></div>
               <div class="caption">HTML</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/css-icon.png" alt="css logo" /></div>
+              <div class="cardimg"><img src="./img/css-icon.png" alt="css logo" ></div>
               <div class="caption">CSS</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/javascript-icon.png" alt="javascript logo" /></div>
+              <div class="cardimg"><img src="./img/javascript-icon.png" alt="javascript logo" ></div>
               <div class="caption">JavaScript</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/react-icon.png" alt="react logo" /></div>
+              <div class="cardimg"><img src="./img/react-icon.png" alt="react logo" ></div>
               <div class="caption">React</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/figma-icon.png" alt="figma logo" /></div>
+              <div class="cardimg"><img src="./img/figma-icon.png" alt="figma logo" ></div>
               <div class="caption">Figma</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/vs-code-icon.png" alt="vs code logo" /></div>
+              <div class="cardimg"><img src="./img/vs-code-icon.png" alt="vs code logo" ></div>
               <div class="caption">VS Code</div>
             </div>
             <div class="card">
-              <div class="cardimg"><img src="./img/adobe-icon.png" alt="adobe suite logo" /></div>
+              <div class="cardimg"><img src="./img/adobe-icon.png" alt="adobe suite logo" ></div>
               <div class="caption">Adobe Suite</div>
             </div>      
           </div>
@@ -154,7 +155,7 @@
       <div class="projects-wrapper">
         <div class="project-item">
           <h3>Unplugged Retreat Website</h3>
-          <img src="./img/unplugged.png" alt="unplugged retreat homepage" />
+          <a href="https://adalieks.github.io/unplugged-retreat/" target="_blank"><img src="./img/unplugged.png" alt="unplugged retreat homepage" ></a>
           <p class="project-language">
             HTML, CSS
           </p>
@@ -165,7 +166,7 @@
         </div>
         <div class="project-item">
           <h3>Guess the Word Game</h3>
-          <img src="./img/guess.png" alt="guess the word homepage" />
+          <a href="https://adalieks.github.io/guess-the-word/" target="_blank"><img src="./img/guess.png" alt="guess the word homepage" ></a>
           <p class="project-language">
             HTML, CSS, JavaScript
           </p>
@@ -176,7 +177,7 @@
         </div>
         <div class="project-item">
           <h3>Github Repo Gallery</h3>
-          <img src="./img/gallery.png" alt="github repo gallery homepage" />
+          <a href="https://adalieks.github.io/github-repo-gallery/" target="_blank"><img src="./img/gallery.png" alt="github repo gallery homepage" ></a>
           <p class="project-language">
             HTML, CSS, JavaScript
           </p>
@@ -187,7 +188,7 @@
         </div>
         <div class="project-item">
           <h3>Virtual Recipe Box</h3>
-          <img src="./img/recipe-box.png" alt="virtual recipe box homepage" />
+          <a href="https://soojqe.csb.app/" target="_blank"><img src="./img/recipe-box.png" alt="virtual recipe box homepage" ></a>
           <p class="project-language">
             HTML, CSS, JavaScript, React
           </p>
@@ -198,7 +199,7 @@
         </div>
         <div class="project-item">
           <h3>Responsive Landing Page</h3>
-          <img src="./img/apparel.png" alt="base apparel homepage" />
+          <a href="https://adalieks.github.io/apparel-coming-soon/" target="_blank"><img src="./img/apparel.png" alt="base apparel homepage" ></a>
           <p class="project-language">
             HTML, CSS, JavaScript
           </p>
@@ -238,7 +239,7 @@
       <div class="footer-right">
         <nav>
           <ul>
-            <li class="about-link"><a href="#top">about</a></li>
+            <li class="about-link" id="reveal-footer"><a href="#top">about</a></li>
             <li class="skills-link"><a href="#skills">skills</a></li>
             <li class="projects-link"><a href="#projects">projects</a></li>
           </ul>
