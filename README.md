@@ -1,21 +1,18 @@
 # adalie-portfolio
-<<<<<<< HEAD
-# graphic-design-portfolio
-# graphic-design-portfolio
 =======
 This is Adalie Schroter's portfolio, showcasing her skills and projects as a front-end developer based in France.
 
-Technologies Used
+# Technologies Used
 The portfolio is built using the following technologies:
 -HTML5
 -CSS3
 -JavaScript
 -React
 
-Getting Started
+# Getting Started
 To view the portfolio, simply open the index.html file in your browser or visit adalieks.com
 
-Features
+# Features
 The portfolio includes the following sections:
 
 About: A section about Adalie Schroter, including her statement and interests.
@@ -23,11 +20,10 @@ Skills: A section showcasing skills with cards and icons.
 Projects: A section displaying projects with their descriptions and links to the code and live versions.
 Connect: A section with Adalie Schroter's contact information and social media links.
 
-Credits
+# Credits
 Font Awesome for providing icons.
 Google Fonts for providing fonts.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
->>>>>>> d8bdb1c2953228cf191a8eab96b753e839e8964c
-# graphic-design-portfolio
+
